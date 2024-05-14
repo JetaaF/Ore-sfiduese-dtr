@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input placeholder="Product" id="produkti" type="text">
+        <input placeholder="Price" id="cmimi" type="text">
+        <input placeholder="#" id="sasisa" type="text">
+        <button onclick="click()" id="buton"> Add to Cart</button>
+        <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Value</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="tableData"></tbody>
+          </table>
+    </form>
+
+
+
+
+
+
+    <!-- <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Value</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody id="tableData"></tbody>
+      </table>
+      <button id="addButton">Add Value</button> -->
+
+      <script>
+        const tableData = document.getElementById('tableData');
+const addButton = document.getElementById('buton');
+
+addButton.addEventListener('click', function() {
+  const newRow = document.createElement('tr');
+  const nameCell = document.createElement('td');
+  nameCell.textContent = inputProduct; // Example name
+
+  const valueCell = document.createElement('td');
+  valueCell.textContent = inputPrice; // You can set initial value here
+
+  newRow.appendChild(nameCell);
+  newRow.appendChild(valueCell);
+
+  tableData.appendChild(newRow);
+});
+
+      </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* form{
+    background-color: red;
+    width: 60em;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4em;
+}
+input{
+    width: 60em;
+    height: 3em;
+    position: relative;
+    left: 5em;
+}
+#buton{
+    width: 60em;
+    height: 3em;
+    position: relative;
+    left: 5em;
+}
+table{
+    display: flex;
+    flex-direction: column;
+    border-collapse: collapse;
+}
+
+   */
+   tr:nth-child(even) {
+    background-color: #eee; /* Light gray background for even rows */
+  }
+  form {
+    display: flex; /* Make form elements display inline */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Align button to the right */
+    top:10em;
+    position: relative;
+  }
+  
+  input[type="text"], #buton {
+    width: 60em;
+    height: 3em;
+    margin-bottom: 5px; /* Add some margin between form elements */
+  }
+    
+   #buton {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text color */
+    padding: 12px 20px; /* Adjust padding slightly */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Add rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    margin-top: 10px; /* Add some margin from top */
+  }
+  
+  #buton:hover {
+    background-color: #3e8e41; /* Darker green on hover */
+  }
+  
+   table {
+    border-collapse: collapse;
+    width: 60em;
+    margin: 20px auto; /* Add some margin for better placement */
+    border: 1px solid #ddd; /* Add a thin border to the table */
+  }
+  
+  th, td {
+    border: 1px solid #ddd; /* Consistent borders for cells */
+    padding: 10px; /* Consistent padding for readability */
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    font-weight: bold; /* Make headers bolder */
+  }
+  
